@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_icon=":taxi:")
 
 col1, col2 = st.columns(2)
 
@@ -15,7 +15,7 @@ with col2:
     """
     st.info(content)
 
-col3, empty_col, col4 = st.columns([1, 0.5, 1])
+col3, empty_col, col4 = st.beta_columns([1, 0.5, 1])
 
 df = pd.read_csv("data.csv", sep=";")
 
