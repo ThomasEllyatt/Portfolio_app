@@ -15,7 +15,7 @@ with col2:
     """
     st.info(content)
 
-col3, empty_col, col4 = st.beta_columns([1, 0.5, 1])
+col3, empty_col, col4 = st.columns([1, 0.5, 1])
 
 df = pd.read_csv("data.csv", sep=";")
 
