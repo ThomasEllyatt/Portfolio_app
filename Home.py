@@ -5,10 +5,11 @@ st.set_page_config(
     layout="wide",
     page_icon="📶",
     page_title="Tom's Portfolio",
-    menu_items = {
+    menu_items={
     'Get Help': 'https://thomasellyatt-portfolio-app-home-bujbpo.streamlit.app/Contact_Us',
     'Report a bug': "https://thomasellyatt-portfolio-app-home-bujbpo.streamlit.app/Contact_Us",
-    'About': """
+    'About':
+    """
     # Welcome to my portfolio!\n
     I'm learning python to improve my skills as a data analyst.
     """
