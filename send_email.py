@@ -1,5 +1,5 @@
 import smtplib
-import os
+import streamlit as st
 from email.message import EmailMessage
 
 
@@ -7,8 +7,8 @@ def send_email(user_email, topic, message):
     host = "smtp.gmail.com"
     port = 465
 
-    username = os.environ['USERNAME']
-    password = os.environ['PASSWORD']
+    username = st.secrets["USERNAME"]
+    password = st.secrets["PASSWORD"]
 
     msg = EmailMessage()
     msg.set_content(message)
